@@ -22,10 +22,25 @@ const resolvers = {
             );
             return bookList;
         },
-        login: async () => {
+        login: async (
+            parent,
+            bookId, 
+            { me } 
+        ) => {
+            if (!me) {
+                return new Error('Not authenticated as user. Try again!');
+            }
 
         },
-        deleteBook: async () => {
+        deleteBook: async (
+            parent,
+            bookId, 
+            { me }
+        ) => {
+            if (!me) {
+                return new Error('Not authenticated as user.');
+            }
+
             const bookList = await.User.findOneAndDelete(
                 { _id },
                 { new: true }
