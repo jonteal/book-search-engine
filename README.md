@@ -89,12 +89,6 @@ npm install OR npm i
 npm run develop
 ```
 
-<a name="usage"></a>
-
-## Usage
-* In order to use the application, the user needs to use an API client such as Insomnia, or any other similar tool. Routes for the Users, Friends, Thoughts, and Reactions below:
-
-
 
 <a name="license"></a>
 
@@ -156,6 +150,7 @@ If you have any questions or comments, please feel free to contact me by email:
 
 ## Links
 Github Repository: https://github.com/jonteal/book-search-engine
+Live Heroku Link: https://my-very-own-book-search.herokuapp.com/
 
 
 <a name="credits"></a>
